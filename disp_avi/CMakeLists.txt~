@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( DisplayAvi )
+find_package( OpenCV REQUIRED )
+add_executable( DisplayAvi disp_avi.cpp)
+target_link_libraries( DisplayAvi ${OpenCV_LIBS} )
